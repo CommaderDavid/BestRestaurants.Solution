@@ -7,9 +7,9 @@
 <h2>Cuisine Details</h2>
 <hr />
 <h3>@Html.DisplayNameFor(model => model.CuisineName): @Html.DisplayFor(model => model.CuisineName)<h3>
-@* <ul>
-    @foreach (@Model.Restaurants item in Model)
-    {
-        
-    }
-</ul> *@
+        <ul>
+            @foreach (var item in Model.Restaurants)
+            {
+                <li>@item.RestaurantName</li>
+            }
+        </ul>
